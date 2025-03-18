@@ -1,7 +1,7 @@
 # Day - 02 (Programming Language Fundamentals)
 
 ### Software
-
+Software is a collection of programs designed to perform specific tasks.
 -   There are 2 types of software
 
     -   System software (Operating System)
