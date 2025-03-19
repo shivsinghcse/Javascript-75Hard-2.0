@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #card {
+            width: 480px;
+            padding: 24px;
+            box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.2);
+            border-left: 15px groove red;
+        }
+
+        #title {
+            font-family: sans-serif;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 16px;
+        }
+
+        p {
+            font-family: sans-serif;
+            color: #323232;
+        }
+
+        .btn {
+            border: none;
+            padding: 12px 27px;
+            margin-bottom: 12px;
+            margin-right: 12px;
+
+        }
+
+        .btn:hover {
+            background-color: #323232;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function right() {
+            window.alert('Right answer 😀😎');
+        }
+        function wrong() {
+            window.alert('Wrong answer 😔');
+        }
+    </script>
+</head>
+
+<body class="animate__animated animate__fadeIn">
+    <div id="card" class="animate__animated animate__bounce">
+        <h1 id="title">My App</h1>
+        <p>What is full form of HTML?</p>
+
+        <button class="btn" onclick="wrong()">Hypr Test Mark Language</button>
+        <button class="btn" onclick="right()">Hypre Text Markup Language</button>
+        <button class="btn" onclick="wrong()">Hyfer Test Markup Language</button>
+        <button class="btn" onclick="wrong()">Hypre Text Mark Language</button>
+    </div>
+</body>
+
+</html>

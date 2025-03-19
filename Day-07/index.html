@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascript</title>
+    <script>
+        // var x = 6;
+        // alert(x)
+
+        function demo() {
+            var x = 6;
+            // window.alert(x);
+            console.log(x);
+            
+        }
+
+        // demo(); 
+    </script>
+</head>
+
+<body>
+    <h1 onclick="demo()">Events in Javascript - click</h1>
+    <h1 oncontextmenu="demo()">Events in Javascript - right click</h1>
+    <h1 ondblclick="demo()">Events in Javascript - doubleclick</h1>
+    <input type="text" placeholder="onkeydown..." onkeydown="demo()"/>
+    <br>
+    <br>
+    <input type="text" placeholder="onkeyup..." onkeyup="demo()"/>
+    <br>
+    <br>
+    <input type="text" placeholder="onkeypress..." onkeypress="demo()"/>
+    <br>
+    <br>
+    <input type="text" placeholder="onchange..." onchange="demo()"/>
+    <br>
+    <br>
+    <input type="text" placeholder="oninput..." oninput="demo()"/>
+    <br>
+    <br>
+    <input type="text" placeholder="onfocus..." onfocus="demo()"/>
+    <br>
+    <br>
+    <input type="text" placeholder="onfocusout..." onfocusout="demo()"/>
+    <br>
+    <br>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
