@@ -49,11 +49,15 @@
     </style>
 
     <script>
-        function right() {
-            window.alert('Right answer 😀😎');
-        }
-        function wrong() {
-            window.alert('Wrong answer 😔');
+        // function right() {
+        //     window.alert('Right answer 😀😎');
+        // }
+        // function wrong() {
+        //     window.alert('Wrong answer 😔');
+        // }
+
+        function answer(result) {
+            window.alert(result + ' answer!!!');
         }
     </script>
 </head>
@@ -63,10 +67,10 @@
         <h1 id="title">My App</h1>
         <p>What is full form of HTML?</p>
 
-        <button class="btn" onclick="wrong()">Hypr Test Mark Language</button>
-        <button class="btn" onclick="right()">Hypre Text Markup Language</button>
-        <button class="btn" onclick="wrong()">Hyfer Test Markup Language</button>
-        <button class="btn" onclick="wrong()">Hypre Text Mark Language</button>
+        <button class="btn" onclick="answer('Wrong')">Hypr Test Mark Language</button>
+        <button class="btn" onclick="answer('Right')">Hypre Text Markup Language</button>
+        <button class="btn" onclick="answer('Wrong')">Hyfer Test Markup Language</button>
+        <button class="btn" onclick="answer('Wrong')">Hypre Text Mark Language</button>
     </div>
 </body>
 
