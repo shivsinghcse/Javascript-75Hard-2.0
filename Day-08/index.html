@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Scopes</title>
+    <script>
+        var x = 10; // global variable | x has global scope
+
+        function demo() {
+            let y = 12; // local variable | y has local scope
+            console.log(x);
+            console.log(y);
+        }
+
+        // demo();
+
+        function demo1() {
+            console.log(x);
+            console.log(y);
+        }
+
+        function One() {
+            window.alert('You clicked on One');
+        }
+        function Two() {
+            window.alert('You clicked on Two');
+        }
+        function Three() {
+            window.alert('You clicked on Three');
+        }
+
+        function Message(number) {
+            window.alert('You clicked on ' + number);
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Variable Scopes | Argument vs Parameter</h1>
+    <button onclick="demo()">Click</button>
+    <!-- <button oncontextmenu="demo()">oncontextmenu</button>
+    <button onmousedown="demo()">onmousedown</button>
+    <button onmouseover="demo()">onmouseover</button>
+    <button onmouseout="demo()">onmouseout</button> -->
+
+    <!-- <button onclick="One()">One</button>
+    <button onclick="Two()">Two</button>
+    <button onclick="Three()">Three</button> -->
+
+    <button onclick="Message('One')">One</button>
+    <button onclick="Message('Two')">Two</button>
+    <button onclick="Message('Three')">Three</button>
+</body>
+
+</html>
